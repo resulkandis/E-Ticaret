@@ -28,6 +28,7 @@ namespace E_Ticaret.ENT
         public virtual DbSet<AltKategori> AltKategori { get; set; }
         public virtual DbSet<Kategoriler> Kategoriler { get; set; }
         public virtual DbSet<Kullanicilar> Kullanicilar { get; set; }
+        public virtual DbSet<Sepet> Sepet { get; set; }
         public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
         public virtual DbSet<Urunler> Urunler { get; set; }
     }

@@ -13,5 +13,6 @@ namespace E_Ticaret.REP
         public class KategoriRepositories : BaseRepository<Kategoriler> { }
         public class AltKategoriRepositories : BaseRepository<AltKategori> { }
         public class UrunRepositories : BaseRepository<Urunler> { }
+        public class SepetRepositories : BaseRepository<Sepet> { }
     }
 }

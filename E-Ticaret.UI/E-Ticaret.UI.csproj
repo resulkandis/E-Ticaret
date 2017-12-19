@@ -157,6 +157,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="AuthorizationAdmin.cs" />
+    <Compile Include="AuthorizationGuest.cs" />
+    <Compile Include="AuthorizationUser.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>

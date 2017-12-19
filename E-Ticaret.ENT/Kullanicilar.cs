@@ -14,10 +14,23 @@ namespace E_Ticaret.ENT
     
     public partial class Kullanicilar
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public Kullanicilar()
+        {
+            this.Sepet = new HashSet<Sepet>();
+        }
+    
         public string KullaniciAd { get; set; }
         public string Sifre { get; set; }
+        public string Ad { get; set; }
+        public string Soyad { get; set; }
         public string Yetki { get; set; }
+        public string Telefon { get; set; }
         public string Email { get; set; }
+        public string Adres { get; set; }
         public Nullable<System.DateTime> OlusturmaTarihi { get; set; }
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Sepet> Sepet { get; set; }
     }
 }

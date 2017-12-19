@@ -14,15 +14,23 @@ namespace E_Ticaret.ENT
     
     public partial class Urunler
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public Urunler()
+        {
+            this.Sepet = new HashSet<Sepet>();
+        }
+    
         public int UrunID { get; set; }
         public string UrunAd { get; set; }
         public Nullable<int> AltKategoriID { get; set; }
-        public Nullable<int> Adet { get; set; }
-        public Nullable<decimal> BirimFiyat { get; set; }
-        public Nullable<decimal> Tutar { get; set; }
+        public Nullable<decimal> Fiyat { get; set; }
         public string Aciklama { get; set; }
         public string Resim { get; set; }
+        public Nullable<bool> TanitimUrunu { get; set; }
+        public Nullable<bool> GununUrunu { get; set; }
     
         public virtual AltKategori AltKategori { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Sepet> Sepet { get; set; }
     }
 }
